@@ -16,7 +16,7 @@
  * 07. header styles
  * 08. intro section
  * 09. process section
- * 10. features section
+ * 10. benefits section
  * 11. pricing section
  * 12. testimomials section 
  * 13. faq section 
@@ -303,7 +303,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #05bca9;
+	background: red;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -311,7 +311,7 @@ ul.disc li::before {
 }
 dt {
 	margin: 0;
-	color: #05bca9;
+	color: red;
 }
 dd {
 	margin: 0 0 0 2rem;
@@ -451,7 +451,7 @@ img.pull-left {
 	margin-left: -30px;
 	margin-top: -30px;
 	padding: 0;
-	background-color: #05bca9;
+	background-color: red;
 	border-radius: 100%;
 	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
 	animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -485,108 +485,6 @@ img.pull-left {
  * ------------------------------------------------------------------- 
  */
 
-fieldset {
-	border: none;
-}
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-	display: block;
-	height: 6rem;
-	padding: 1.5rem 2rem;
-	border: 0;
-	outline: none;
-	vertical-align: middle;
-	color: #737373;
-	font-family: "merriweather-regular", sans-serif;
-	font-size: 1.5rem;
-	line-height: 3rem;
-	border-radius: 3px;
-	background: #FFFFFF;
-	max-width: 100%;
-	border: 1px solid #d5d5d5;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.ss-custom-select {
-	position: relative;
-	padding: 0;
-	display: inline-block;
-}
-.ss-custom-select select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
-	text-indent: 0.01px;
-	text-overflow: '';
-	margin: 0;
-	line-height: 3rem;
-	vertical-align: middle;
-	padding-right: 4rem;
-}
-.ss-custom-select select option {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-.ss-custom-select select::-ms-expand {
-	display: none;
-}
-.ss-custom-select::after {
-	content: '\f123';
-	font-family: 'Ionicons';
-	position: absolute;
-	top: 50%;
-	right: 18px;
-	margin-top: -10px;
-	bottom: auto;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 15px;
-	text-align: center;
-	pointer-events: none;
-	color: #252525;
-}
-textarea {
-	min-height: 25rem;
-}
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-	color: #000000;
-	background: #f4fffe;
-	border: 1px solid #d2fef9;
-}
-label, legend {
-	font-family: "merriweather-bold", sans-serif;
-	font-size: 1.4rem;
-	margin-bottom: .6rem;
-	color: #404040;
-	display: block;
-}
-label span, legend span {
-	color: #05bca9;
-}
-input[type="checkbox"], input[type="radio"] {
-	display: inline;
-}
 
 /**
  * Style Placeholder Text  
@@ -665,7 +563,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: #05bca9;
+	background: red;
 	color: #FFFFFF;
 }
 
@@ -732,6 +630,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
+
 .section-intro h5 {
 	color: rgba(56, 66, 78, 0.5);
 	font-size: 1.6rem;
@@ -748,7 +647,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .section-intro .with-bottom-line::after {
 	display: block;
-	background-color: #05bca9;
+	background-color: red;
 	width: 120px;
 	height: 3px;
 	content: '\0020';
@@ -833,14 +732,14 @@ header .logo a {
 	display: block;
 	margin: 0;
 	padding: 0;
-	border: none;
+	border-radius: 3%;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 42px;
-	height: 42px;
+	width: 200px;
+	height: 100px;
 	background: url("../images/logo.png") no-repeat center;
-	background-size: 42px 42px;
+	background-size: 200px 100px;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
@@ -848,14 +747,16 @@ header .logo a {
 	transition: all 0.5s ease-in-out;
 }
 .sticky {
+	
 	position: fixed;
 	background: #14171c;
 	top: 0;
 }
 .sticky .logo a {
-	width: 38px;
-	height: 38px;
-	background-size: 38px 38px;
+	width: 200px;
+	height: 100px;
+	background-size: 100px 50px;
+   
 }
 
 /**
@@ -868,11 +769,13 @@ header .logo a {
 	header {
 		top: 0;
 		padding: 6px 0;
+	
 	}
 	header .logo a {
-		width: 38px;
-		height: 38px;
-		background-size: 38px 38px;
+		width: 200px;
+		height: 70px;
+		background-size: 200px 70px;
+		
 	}
 }
 
@@ -927,7 +830,7 @@ a.menu-toggle {
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background-color: #05bca9;
+	background-color: red;
 	content: '\0020';
 	display: block;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1148,7 +1051,7 @@ a.menu-toggle {
  */
 
 #intro {
-	background: #14181E url(../images/intro-bg.jpg) no-repeat center;
+	background: #14181E url(../images/Digitalizacion_intro.webp) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1521,12 +1424,12 @@ a.menu-toggle {
 
 /** 
  * ===================================================================
- * features section
+ * benefits section
  *
  * ------------------------------------------------------------------- 
  */
 
-#features {
+#benefits {
 	background: #090909 url(../images/features-bg.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1535,61 +1438,65 @@ a.menu-toggle {
 	padding-bottom: 12rem;
 	color: white;
 }
-#features .section-intro h1 {
+#benefits .section-intro h1 {
 	color: white;
 }
-#features .section-intro h5 {
+#benefits .section-intro h5 {
 	color: rgba(255, 255, 255, 0.5);
 }
-#features .section-intro p {
+#benefits .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
 }
-.features-content {
+.benefits-content {
 	max-width: 1200px;
 }
-.features-list {
+.benefits-list {
 	margin-top: 1.2rem;
 	text-align: center;
 }
-.features-list .feature {
+.benefits-list .benfit {
 	margin-bottom: 1.2rem;
 	padding: 0 32px;
+	
 }
-.features-list .icon {
+.benefits-list .icon {
 	display: inline-block;
 	margin-bottom: 2.1rem;
+	text-align: center;
 }
-.features-list .icon i {
+.benefits-list .icon i {
 	font-size: 4.8rem;
+	text-align:center;
 }
-.features-list .h05 {
+.benefits-list .h05 {
 	font-size: 1.7rem;
 	line-height: 1.765;
 	color: #05bca9;
 	margin-bottom: 1.8rem;
+    text-align: center;
 }
 
 /**
  * responsive:
- * features
+ * benefits
  * -
  */
 
 @media only screen and (max-width:768px) {
-	.features-content {
+	.benefits-content {
 		max-width: 600px;
 	}
-	.features-list .feature {
+	.benefits-list .benfit {
 		padding: 0 15px;
 	}
 }
 @media only screen and (max-width:600px) {
-	.features-list .feature {
+	.benefits-list .benfit {
 		padding: 0 10px;
 	}
 }
 @media only screen and (max-width:400px) {
-	.features-list .feature {
+	.benefits-list .benfit {
 		padding: 0;
 	}
 }
@@ -1685,23 +1592,23 @@ a.menu-toggle {
 	background: #58687b;
 	color: #FFFFFF;
 }
-.pricing-content .price-block .features {
+.pricing-content .price-block .benefits {
 	list-style: none;
 	font-family: "raleway-bold", sans-serif;
 	font-size: 1.5rem;
 	color: rgba(0, 0, 0, 0.4);
 	margin: .6rem 0 1.8rem 0;
 }
-.pricing-content .price-block .features li {
+.pricing-content .price-block .benefits li {
 	padding: .6rem 0;
 	border-bottom: 1px solid #EAEAED;
 }
-.pricing-content .price-block .features li strong {
+.pricing-content .price-block .benefits li strong {
 	color: #353F49;
 	font-family: "raleway-bold", serif;
 	margin-right: 5px;
 }
-.pricing-content .price-block .features li:last-child {
+.pricing-content .price-block .benefits li:last-child {
 	border: none;
 }
 .pricing-content .primary .top-part {
