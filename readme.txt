@@ -1,7 +1,7 @@
 
 ==================================================================================================
 
-LHANDER is a modern and minimal landing page site template. I has great features you would 
+AuraComunidad is a modern and minimal landing page site template. I has great features you would 
 absolutely love. The template is mobile and retina ready, has hundreds of webfont icons, has
 mailchimp integration and much more. Lhander has clean code and is very easy to customize. 
 It's the perfect template to showcase your app products and services.
