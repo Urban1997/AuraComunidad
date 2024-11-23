@@ -1125,8 +1125,8 @@ a.menu-toggle {
 	letter-spacing: .4rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	color: #05bca9;
-	border-color: #05bca9;
+	color: #ffffff;
+	border-color: #ff0000;
 }
 
 /**
@@ -1704,7 +1704,7 @@ a.menu-toggle {
 }
 #testimonials .h01::after {
 	display: block;
-	background-color: #05bca9;
+	background-color: #ff0202;
 	width: 120px;
 	height: 3px;
 	content: '\0020';
